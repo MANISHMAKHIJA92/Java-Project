@@ -40,20 +40,20 @@ public class EmployeeController {
 
 	@RequestMapping(value = "/employee", method = RequestMethod.POST, produces = "application/json")
 
-	public Employee addEmployee(@RequestBody Employee emp) {
+	public void addEmployee(@RequestBody Employee emp) {
 
 		System.out.println("Creating employee: " + emp.getEmpNo());
 
-		return employeeDAO.addEmployee(emp);
+		 employeeDAO.addEmployee(emp);
 	}
 
 	@RequestMapping(value = "/employee", method = RequestMethod.PUT, produces = "application/json")
 
-	public Employee updateEmployee(@RequestBody Employee emp) {
+	public void updateEmployee(@RequestBody Employee emp) {
 
 		System.out.println(" Editing employee: " + emp.getEmpNo());
 
-		return employeeDAO.updateEmployee(emp);
+		 employeeDAO.updateEmployee(emp);
 	}
 
 

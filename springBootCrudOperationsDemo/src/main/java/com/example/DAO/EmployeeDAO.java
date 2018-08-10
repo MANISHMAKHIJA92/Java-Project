@@ -10,9 +10,9 @@ public interface EmployeeDAO {
 
 	Employee getEmployee(String empNo);
 
-	Employee addEmployee(Employee emp);
+	int addEmployee(Employee emp);
 
-	Employee updateEmployee(Employee emp);
+	int updateEmployee(Employee emp);
 
 	void deleteEmployee(String empNo);
 
